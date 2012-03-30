@@ -1,0 +1,7 @@
+<h1>Pick two players then click play to begin:</h1>
+
+  <%= form_for @game do |f| %>
+    <%=  select("player_x_id", "user_id", @users.collect {|u| [ u.name, u.id ] }, { :include_blank => true })%>
+    <%=  select("player_o_id", "user_id", @users.collect {|u| [ u.name, u.id ] }, { :include_blank => true })%>
+    <%= f.submit "Play" %>
+  <% end %>

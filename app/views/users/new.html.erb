@@ -1,0 +1,12 @@
+<h1> Want to play tic tac toe? You're in the right place.</h1>
+<div class="content-form">
+  <%= form_for(@user) do |f| %>
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name, :autocomplete => "off" %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Sign up" %>
+  </div>
+  <% end %>
+</div>

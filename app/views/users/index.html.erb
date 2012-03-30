@@ -1,6 +1,9 @@
-<p>Hello World</p>
+<h1>Leaderboard</h1>
 
-<% @users.each do |user| %>
-  <%= user.name %>
-  Wins: <%= user.score.first %> Losses: <%= user.score.second %> Wins: <%= user.score.last %>
+<p>Name - Record (Win - Loss - Tie)</p>
+
+<ul id="leaderboard">
+<% @users.each do |u| %>
+<li><%= link_to u.name, u %> - <%= u.score.first %>/<%= u.score.second %>/<%= u.score.last%></li>
 <% end %>
+</ul>

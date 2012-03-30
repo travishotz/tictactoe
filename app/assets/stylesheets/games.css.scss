@@ -1,3 +1,50 @@
 // Place all the styles related to the Games controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#game_map{
+	border: 3px solid black;
+	clear: both;
+	float: left;
+}
+#game_map .cell{
+	cursor: pointer;
+	float: left;
+	border:3px solid black;
+	width: 80px;
+	height: 80px;
+	line-height: 80px;
+	font-size: 40px;
+	text-align: center;
+}
+.clear{
+	clear: both;
+	line-height: 0;
+}
+#game_map .player1_cell{
+	color: orange;
+}
+#game_map .player2_cell{
+	color: black;
+}
+#game_map .hover{
+	background: #DFE1E3;
+}
+#game_map .win{
+	background: #D3E7DC;
+}
+#player_mark, #player_name{
+	padding: 0px 3px;
+}
+.end_game{
+	display: none;
+}
+#winner_name{
+	text-decoration: underline;
+}
+table{
+	clear: both;
+}
+td{
+	text-align: center;
+}
