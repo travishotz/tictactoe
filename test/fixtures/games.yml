@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  player_x_id: 1
+  player_o_id: 1
+  score: 1
+
+two:
+  player_x_id: 1
+  player_o_id: 1
+  score: 1

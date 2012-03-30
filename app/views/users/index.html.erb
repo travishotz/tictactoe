@@ -1,0 +1,6 @@
+<p>Hello World</p>
+
+<% @users.each do |user| %>
+  <%= user.name %>
+  Wins: <%= user.score.first %> Losses: <%= user.score.second %> Wins: <%= user.score.last %>
+<% end %>
