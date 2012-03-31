@@ -1,10 +1,16 @@
 <div id="game_map">
 </div>
-
+<br><br>
 <div id="winner">
 
-  <%= @game.player_x_id %>
-  
-  <%= @game.player_o_id %>
+  <%= form_for @game do |f| %>
+  <%= f.label :winner %>
+    <%=  select("player_x_id", "user_id", @users.collect {|u| [ u.name, u.id ] }, { :include_blank => true })%>
+  <%= f.label :loser %>
+    <%=  select("player_o_id", "user_id", @users.collect {|u| [ u.name, u.id ] }, { :include_blank => true })%>
+    
+    <!-- checkbox for tie will be added here -->
+    <%= f.submit "Done" %>
+  <% end %>
 </div>
 
